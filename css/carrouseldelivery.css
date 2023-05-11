@@ -4,6 +4,7 @@
     position: relative;
 }
 .content-all{
+    align-content: center;
     width: 220px;
     margin: auto;
     perspective: 800px;
@@ -36,17 +37,17 @@
     transition: all 300ms;
 }
 
-.content-carrousel-delivery figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(2){transform: rotateY(36deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(3){transform: rotateY(72deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(4){transform: rotateY(108deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(5){transform: rotateY(144deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(6){transform: rotateY(180deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(7){transform: rotateY(216deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(8){transform: rotateY(252deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(9){transform: rotateY(288deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(10){transform: rotateY(324deg) translateZ(300px);}
-.content-carrousel-delivery figure:nth-child(11){transform: rotateY(360deg) translateZ(300px);}
+.content-carrousel-delivery figure:nth-child(1){transform: rotateY(0deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(2){transform: rotateY(36deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(3){transform: rotateY(72deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(4){transform: rotateY(108deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(5){transform: rotateY(144deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(6){transform: rotateY(180deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(7){transform: rotateY(216deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(8){transform: rotateY(252deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(9){transform: rotateY(288deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(10){transform: rotateY(324deg) translateZ(218px);}
+.content-carrousel-delivery figure:nth-child(11){transform: rotateY(360deg) translateZ(218px);}
 
 .content-carrousel-delivery img{
     width: 100%;
