@@ -849,7 +849,6 @@ ul.social_icon li a.github:hover {
 }
 
 .about_img {
-     margin-left: 100px;
      display: inline-block;
      position: relative;
      width: 400px;
@@ -874,4 +873,8 @@ ul.social_icon li a.github:hover {
      bottom:10px;
      right:10px;
      z-index:2;
+   }
+   .about_us{
+     font-style: bold;
+     color:white;
    }
