@@ -692,6 +692,10 @@ ul.social_icon li a.github:hover {
      background-color: #000000;
      color: #fff;
 }
+ul.social_icon li a.whatsapp:hover {
+     background-color: #58e92c;
+     color: #fff;
+}
 
 .footer h3 {
      font-weight: 600;
