@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -11,9 +10,14 @@
 
    <title>Alejandro Dev</title>
 
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
    <link rel="stylesheet" href="css/bootstrap.min.css">
 
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/routesmap.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="variables.js"></script>
    <link rel="stylesheet" href="/css/stylescrol.css">
@@ -30,7 +34,7 @@
 
 </head>
 
-<body class="main-layout inner_posituong computer_page">
+<body class="main-layout inner_posituong">
 
    <div class="loader_bg">
       <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -70,9 +74,11 @@
                            <li class="nav-item">
                               <a class="nav-link" href="certificados.html">Certificados</a>
                            </li>
-                             <!---  <li class="nav-item">
+                            <!---  <li class="nav-item">
                               <a class="nav-link" href="contact.html">Contacto</a>
-                           </li>-->
+                           </li>-->  <li class="nav-item">
+                              <a class="nav-link" href="contact.html">Contacto</a>
+                           </li>
                         </ul>
                      </div>
                   </nav>
@@ -82,32 +88,72 @@
       </div>
    </header>
 
-   <div class="about">
+   <div class="products">
       <div class="container">
-         <div class="row d_flex">
-            <div class="col-md-5">
+         <div class="row">
+            <div class="col-md-12">
                <div class="titlepage">
-                  <h2>Sobre mi</h2>
-                  <p>Estudie la carrera de ingeniería en tecnologías de la
-                     información, estudie en la universidad Tecnológica del
-                     Centro de Veracruz, me gradúe en el año 2021, estuve
-                     como becario en la consultora Branchbit, en la Torre
-                     TotalPlay en la Ciudad de México, me gusta el
-                     desarrollo de aplicaciones móviles, las cuales las realizo
-                     utilizando el lenguaje de Kotlin, consumo de Apis con
-                     Retrofit, Google Maps, se un poco del modelo de
-                     presentación MVP
-                  </p>
+                  <h2>Routes Maps</h2>
                </div>
+               <h2>Mapa</h2>
             </div>
-            <div class="col-md-7">
-               <div class="about_img">
-                  <figure><img src="images/yo.jpg" class="circular--square" /></figure>
-               </div>
+           
+            <div class="galery">
+               <h1>Menu</h1>
+               <img class="jelly" src="/images/project3/menu.jpeg" alt="jelly">
+            </div>
+       
+            <div class="galery">
+               <h1>Ruta A-B</h1>
+               <img class="jelly" src="/images/project3/ab_route.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Mi ubicación</h1>
+               <img class="jelly" src="/images/project3/miubicacion.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Puntos A,B,C</h1>
+               <img class="jelly" src="/images/project3/abc.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Ver datos</h1>
+               <img class="jelly" src="/images/project3/datos.jpeg" alt="jelly">
+            </div>
+            <div class="articulo">
+               <article>
+                  <h2>Descripción</h2>
+
+                  <p>
+                     Una aplicación para obtener la ubicación en la que se encuentra el usuario, igual puede marcar
+                     dos puntos y se marcara una ruta en el mapa para llegar al otro punto, también poder marcar tres
+                     puntos en diferentes lugares, y así como marcar un punto y ver la información donde se encuentra
+                     el punto, ciudad y país.
+
+                  </p>
+
+                  <h4>Tecnologias</h4>
+
+                  <p>
+                     Este proyecto se realizó con el lenguaje de Kotlin, retrofit, haciendo uso de la API
+                     <a href="" target="_blank">openrouteservice.org</a>
+                     que se utilizó para obtener los productos mostrados en la aplicación, Picasso para la visualización
+                     de las imágenes.
+
+                  </p>
+               </article>
+               <aside class="repo">
+                  <h2>Repositorio</h2>
+
+                  <ul>
+                     <div class="repositorio">
+                        <a href="#" target="_blank"><img
+                              src="./images/github.png"></a>
+                     </div>
+                  </ul>
+               </aside>
             </div>
          </div>
       </div>
-   </div>
    </div>
 
    <footer>
@@ -151,7 +197,6 @@
          </div>
       </div>
    </footer>
-
    <script src="js/jquery.min.js"></script>
    <script src="js/popper.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
