@@ -313,10 +313,7 @@ ul.btn li:last-child {
      color: #51fe44;
 }
 
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show>.nav-link {
+.navigation.navbar-dark .navbar-nav .active>.nav-link {
      color: #51fe44;
 }
 
