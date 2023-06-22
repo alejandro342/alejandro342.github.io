@@ -738,6 +738,7 @@ ul.social_icon li a.whatsapp:hover {
 .about .titlepage {
      text-align: left;
      background-color: #24DA4B;
+     border-radius: 10px;
 }
 .about .titlepage h2 {
      max-width: inherit;
