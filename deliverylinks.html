@@ -24,7 +24,7 @@
 
    <link rel="stylesheet" href="css/responsive.css">
 
-   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <link rel="icon" href="images/icono.png"/>
 
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 
@@ -114,24 +114,42 @@
                   <h2>Descripción</h2>
 
                   <p>
-                     Es un simulador de una tienda online, en la cual se muestran productos de diferentes categorías
-                     al usuario final el cual pude seleccionar un producto y se le mostrara el detalle correspondiente
-                     al artículo, puede agregar el producto a su carrito de compras de 1 o más regresar a ver otros
-                     productos y realizar la misma acción y sus productos agregados al carrito estarán guardados, podrá
-                     ver los productos que agrego a su carrito en la vista carrito de compras y realizar la compra,
-                     al finalizar su carrito de compras se limpiará.
-
+                     Es este proyecto se cuentan con tres roles,  1.- cliente, 2.- repartidor,
+                     3.- restaurante, en los cuales se realizan diferentes acciones, tienen flujos diferentes.
+                     
                   </p>
 
-                  <h3>Tecnologias</h3>
+                  <h2>Flujo Cliente</h2>
+                  <p>
+                     Tiene el flujo de poder ver las categorías y los productos, así como sus detalles con los que cuenta el
+                      restaurante, poder agregar productos a su carrito de compras, registrar direcciones a las cuales el 
+                      repartidor podrá ir a entregar su pedido, métodos de pago Mercado Pago, PayPal, le llega una notificación
+                      de que su pedido va en camino cuando el repartidor inicia el recorrido poder ver el trayecto del repartidor
+                      asignado, ver sus datos, poder llamarlo.
+
+                 </p>
+                 <h2>Flujo Repartidor</h2>
+            
+                 <p>
+                     Tiene el flujo de poder ver los pedidos asignados a entregar, iniciar recorrido de entrega, ver la dirección
+                     a donde debe dirigirse, ver el mapa y los datos del cliente, poder llamarlo cuando entrega el pedido, poder 
+                     realizar la acción de cambiar el estado del pedido ha entregado, le llega una notificación de que un pedido 
+                     se le ha asignado.
+                 </p>
+                 <h2>Flujo Restaurant</h2>
+         
+                 <p>
+                     Tiene el flujo de poder ver, registrar, borrar, actualizar categorías y productos, ver los pedidos realizados por 
+                     un cliente, asignar repartidor a un pedido, le llega notificación de que se realizó un pedido, ver los estados en 
+                     los que el pedido se encuentra, pagado, despachado, en camino, entregado.
+                 </p>
+                  <h3>Tecnologías</h3>
 
                   <p>
-                     Este proyecto se realizó con el lenguaje de Kotlin usando MVP, retrofit, haciendo uso de la API
-                     <a href="https://fakestoreapi.com/products" target="_blank">https://fakestoreapi.com/products</a>
-                     que se utilizó para obtener los productos mostrados en la
-                     aplicación, Picasso para la visualización de las imágenes.
+                     Este proyecto se realizó con el lenguaje de Kotlin, retrofit,PosgrestSQL como base de datos, Nodejs para el backend,
+                     Picasso para la visualización de las imágenes, Google Maps, Google Storage para el alojamiento de la imágenes.
+                   </p>
 
-                  </p>
                </article>
                <aside class="repo">
                   <h2>Repositorio</h2>
