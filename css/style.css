@@ -729,26 +729,54 @@ ul.social_icon li a.whatsapp:hover {
 
 /* about */
 
-.about {
-     background-color: #fff;
-     padding: 130px 0;
+
+.about_main {
+     font-family: 'Dosis', sans-serif;
+     padding: 50px 0;
+     background-color: #003861;
 }
 
-
-.about .titlepage {
+.about_main .titlepage {
      text-align: left;
-     background-color: #24DA4B;
-     border-radius: 10px;
+     padding-bottom: 0;
 }
-.about .titlepage h2 {
+
+.about_main .titlepage p {
+     color: #fff;
+     font-size: 40px;
+     font-weight: normal;
+     padding-bottom: 24px;
+     line-height: 40px;
+}
+
+.about_main .titlepage h2 {
+     text-transform: none;
+     font-size: 80px;
+     color: #fff;
      max-width: inherit;
      border: inherit;
-     margin-left: 30%;
+     font-weight: 500;
+     line-height: 80px;
 }
 
-.about .titlepage p {
-     padding: 30px 0;
-     margin: 10px;
+.about_box figure {
+     margin: 0;
+}
+
+.margin_bottom {
+     margin-bottom: 30px;
+}
+
+.about_main h2.tecnologias {
+     margin-top: 90px;
+     font-size: 50px;
+     color: orange;
+}
+
+.about_main h2.about {
+     margin-top: 60px;
+     font-size: 70px;
+     margin-bottom: 60px;
 }
 
 .about_img figure {
