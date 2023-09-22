@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -10,6 +9,7 @@
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
    <title>Alejandro Dev</title>
+
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -17,7 +17,7 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
 
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/carrouseldelivery.css">
+   <link rel="stylesheet" href="css/routesmap.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="variables.js"></script>
    <link rel="stylesheet" href="/css/stylescrol.css">
@@ -76,7 +76,7 @@
                            </li>-->
                             <!---  <li class="nav-item">
                               <a class="nav-link" href="contact.html">Contacto</a>
-                           </li>-->
+                           </li>-->  
                         </ul>
                      </div>
                   </nav>
@@ -91,72 +91,67 @@
          <div class="row">
             <div class="col-md-12">
                <div class="titlepage">
-                  <h2>DeliveryLinks</h2>
+                  <h2>Routes Maps</h2>
                </div>
+               <h2>Mapa</h2>
             </div>
-            <div class="content-all">
-               <div class="content-carrousel-delivery">
-                  <figure><img src="/images/project2/login.jpeg"></figure>
-                  <figure><img src="/images/project2/register.jpeg"></figure>
-                  <figure><img src="/images/project2/categorias.jpeg"></figure>
-                  <figure><img src="/images/project2/ordersclient.jpeg"></figure>
-                  <figure><img src="/images/project2/ubicacionmapa.jpeg"></figure>
-                  <figure><img src="/images/project2/direccionesguardadas.jpeg"></figure>
-                  <figure><img src="/images/project2/direccion registrada.jpeg"></figure>
-                  <figure><img src="/images/project2/deliverystart.jpeg"></figure>
-                  <figure><img src="/images/project2/roles.jpeg"></figure>
-                  <figure><img src="/images/project2/datostarjeta.jpeg"></figure>
-               </div>
+           
+            <div class="galery">
+               <h1>Menu</h1>
+               <img class="jelly" src="/images/project3/menu.jpeg" alt="jelly">
             </div>
-
+       
+            <div class="galery">
+               <h1>Ruta A-B</h1>
+               <img class="jelly" src="/images/project3/ab_route.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Mi ubicación</h1>
+               <img class="jelly" src="/images/project3/miubicacion.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Puntos A,B,C</h1>
+               <img class="jelly" src="/images/project3/abc.jpeg" alt="jelly">
+            </div>
+            <div class="galery">
+               <h1>Ver datos</h1>
+               <img class="jelly" src="/images/project3/datos.jpeg" alt="jelly">
+            </div>
             <div class="articulo">
                <article>
                   <h2>Descripción</h2>
 
                   <p>
-                     Es este proyecto se cuentan con tres roles,  1.- cliente, 2.- repartidor,
-                     3.- restaurante, en los cuales se realizan diferentes acciones, tienen flujos diferentes.
-                     
+                     Una aplicación para obtener la ubicación en la que se encuentra el usuario, puede marcar
+                     dos puntos y se marcara una ruta en el mapa para llegar al otro punto, o marcar tres
+                     puntos en diferentes lugares, y ver la información donde se encuentra el punto que marco
+                     en el lugar seleccionado, ciudad y país.
+
                   </p>
 
-                  <h2>Flujo Cliente</h2>
-                  <p>
-                     Tiene el flujo de poder ver las categorías y los productos, así como sus detalles con los que cuenta el
-                      restaurante, poder agregar productos a su carrito de compras, registrar direcciones a las cuales el 
-                      repartidor podrá ir a entregar su pedido, métodos de pago Mercado Pago, PayPal, le llega una notificación
-                      de que su pedido va en camino cuando el repartidor inicia el recorrido poder ver el trayecto del repartidor
-                      asignado, ver sus datos, poder llamarlo.
-
-                 </p>
-                 <h2>Flujo Repartidor</h2>
-            
-                 <p>
-                     Tiene el flujo de poder ver los pedidos asignados a entregar, iniciar recorrido de entrega, ver la dirección
-                     a donde debe dirigirse, ver el mapa y los datos del cliente, poder llamarlo cuando entrega el pedido, poder 
-                     realizar la acción de cambiar el estado del pedido ha entregado, le llega una notificación de que un pedido 
-                     se le ha asignado.
-                 </p>
-                 <h2>Flujo Restaurant</h2>
-         
-                 <p>
-                     Tiene el flujo de poder ver, registrar, borrar, actualizar categorías y productos, ver los pedidos realizados por 
-                     un cliente, asignar repartidor a un pedido, le llega notificación de que se realizó un pedido, ver los estados en 
-                     los que el pedido se encuentra, pagado, despachado, en camino, entregado.
-                 </p>
-                  <h3>Tecnologías</h3>
+                  <h4>Tecnologias</h4>
 
                   <p>
-                     Este proyecto se realizó con el lenguaje de Kotlin, retrofit,PosgrestSQL como base de datos, Nodejs para el backend,
-                     Picasso para la visualización de las imágenes, Google Maps, Google Storage para el alojamiento de la imágenes.
-                   </p>
+                     Este proyecto se realizó con el lenguaje de Kotlin, retrofit, haciendo uso de la API
+                     <a href="" target="_blank">openrouteservice.org</a>
+                     que se utilizó para obtener los datos del mapa junto con GoogleMaps.
 
+                  </p>
                </article>
-        
+               <aside class="repo">
+                  <h2>Repositorio</h2>
+
+                  <ul>
+                     <div class="repositorio">
+                        <a href="https://github.com/alejandro342/Routes-maps" target="_blank"><img
+                              src="./images/github.png"></a>
+                     </div>
+                  </ul>
+               </aside>
             </div>
          </div>
       </div>
    </div>
-
 
    <footer>
       <div class="footer">

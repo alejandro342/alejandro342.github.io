@@ -1,19 +1,12 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+/*Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap');
 
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
 
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+/* Files*/
 
 @import url(animate.min.css);
 @import url(normalize.css);
@@ -27,7 +20,7 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+/* body*/
 
 * {
      box-sizing: border-box !important;
@@ -38,7 +31,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #000000;
      font-size: 14px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
@@ -111,7 +104,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -156,7 +149,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -220,13 +213,7 @@ button {
      background: #f9f9f9;
 }
 
-.theme_bg {
-     background: #38c8a8;
-}
 
-.margin_top_30 {
-     margin-top: 30px !important;
-}
 
 .full {
      width: 100%;
@@ -236,10 +223,7 @@ button {
 }
 
 
-/**-- heading section --**/
-
-
-/*---------------------------- preloader area ----------------------------*/
+/* preloader area */
 
 .loader_bg {
      position: fixed;
@@ -282,22 +266,19 @@ ul.btn li:last-child {
      padding-right: 0;
 }
 
-
-/*-- header area --*/
-
-
-/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
-
-
 /*-- navigation--*/
 
 .navigation.navbar {
      float: right;
-     padding-top: 31px !important;
+     padding-top: 20px !important;
      padding: 0;
+}
+
+div.header {
+     position: fixed;
+     background-color: rgba(22, 22, 23, .8);
+     height: 100px;
+     margin-top: 5px;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
@@ -308,17 +289,16 @@ ul.btn li:last-child {
      font-weight: 500;
 }
 
-.navigation.navbar-dark .navbar-nav .nav-link:focus,
-.navigation.navbar-dark .navbar-nav .nav-link:hover {
-     color: #51fe44;
+div.header img {
+     width: 130px;
+
 }
 
-.navigation.navbar-dark .navbar-nav .active>.nav-link,
-.navigation.navbar-dark .navbar-nav .nav-link.active,
-.navigation.navbar-dark .navbar-nav .nav-link.show,
-.navigation.navbar-dark .navbar-nav .show>.nav-link {
-     color: #51fe44;
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #24DA4B;
 }
+
 
 .navbar-expand-md .navbar-nav {
      padding-right: 10px;
@@ -344,46 +324,26 @@ ul.btn li:last-child {
      color: #fff;
      line-height: 40px;
 }
-.logo{
-     margin-top: 0;
-     width: 200px;
-}
 
+.logo {
+     float: left;
+     width: 100%;
+}
 
 /** banner section **/
 
 .banner_main {
-     background: url(../images/banner.jpg);
+     background: black;
      background-repeat: no-repeat;
-     min-height: 900px;
+     min-height: 500px;
      background-size: 100% 100%;
      display: flex;
-     justify-content: center;
      align-content: center;
      align-items: center;
-     position: relative;
 }
-.banner_main::before {
-     position: absolute;
-     content: "";
-     width:50px; 
-     height:40px;
-     background: url(../images/cross.png);
-     background-repeat: no-repeat;
-     bottom: -38px;
-     right: 38px;
-}
-.banner_main::after {
-     position: absolute;
-     content: "";
-     width:50px; 
-     height:40px;
-     background: url(../images/cross.png);
-     background-repeat: no-repeat;
-     bottom: -38px;
-     left: 38px;
-}
+
 .text-bg {
+     margin-top: 80px;
      text-align: left;
 }
 
@@ -395,14 +355,6 @@ ul.btn li:last-child {
      font-weight: bold;
 }
 
-.text-bg span {
-     color: #fff;
-     font-size: 42px;
-     line-height: 50px;
-     font-weight: normal;
-     padding-bottom: 18px;
-     display: block;
-}
 
 .text-bg p {
      line-height: 28px;
@@ -416,22 +368,20 @@ ul.btn li:last-child {
      padding-top: 70px;
 }
 
-.text_img {
-     margin-right: -130px;
-}
-
-.text_img figure {
-     margin: 0;
-}
-
 .text_img figure img {
+     width: 90%;
+}
+
+.images {
      width: 100%;
+     display: block;
+
 }
 
-.carousel-caption {
-     position: inherit;
+.retrofit2 {
+     width: 90%;
+     height: 90%;
 }
-
 
 .text-bg a {
      font-size: 17px;
@@ -447,13 +397,6 @@ ul.btn li:last-child {
      transition: ease-in all 0.5s;
      margin-right: 10px;
 }
-
-.text-bg a:hover {
-     background-color: #48ca95;
-     color: #fff;
-     transition: ease-in all 0.5s;
-}
-
 
 /** end banner section **/
 
@@ -503,20 +446,20 @@ ul.btn li:last-child {
      transition: ease-in all 0.5s;
 }
 
-/** laptop  section **/
+/** tools  section **/
 
-.laptop {
+.tools {
      font-family: 'Dosis', sans-serif;
-     padding: 130px 0;
-     background-color: #4f4aa6;
+     padding: 50px 0;
+     background-color: #003861;
 }
 
-.laptop .titlepage {
+.tools .titlepage {
      text-align: left;
      padding-bottom: 0;
 }
 
-.laptop .titlepage p {
+.tools .titlepage p {
      color: #fff;
      display: block;
      font-size: 40px;
@@ -525,7 +468,7 @@ ul.btn li:last-child {
      line-height: 40px;
 }
 
-.laptop .titlepage h2 {
+.tools .titlepage h2 {
      text-transform: none;
      font-size: 80px;
      color: #fff;
@@ -535,11 +478,7 @@ ul.btn li:last-child {
      line-height: 80px;
 }
 
-.laptop_box {
-     margin-right: -50px;
-}
-
-.laptop_box figure {
+.tools_box figure {
      margin: 0;
 }
 
@@ -547,15 +486,17 @@ ul.btn li:last-child {
      margin-bottom: 30px;
 }
 
-.laptop .read_more {
-     display: block;
-     margin-top: 60px;
+.tools h2.tecnologias {
+     margin-top: 50px;
+     font-size: 50px;
+     color: orange;
 }
 
+.tools h2.tecno {
+     font-size: 70px;
+}
 
 /** end laptop  section **/
-
-
 
 
 /** contact section **/
@@ -564,7 +505,7 @@ ul.btn li:last-child {
      background: url(../images/contact_g.jpg);
      background-repeat: no-repeat;
      background-size: 100% 100%;
-     padding: 90px 0;
+     padding: 120px 0;
 }
 
 .contact .titlepage h2 {
@@ -633,12 +574,21 @@ ul.btn li:last-child {
 
 /** end contact section **/
 
+/*section certific*/
+.certific{
+     background: url(../images/contact_g.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 120px 0;
+}
 
+/*en certific*/
 /** footer **/
 
 .footer {
      background: black;
      height: 100%;
+     
 }
 
 .footer .titlepage {
@@ -651,19 +601,20 @@ ul.btn li:last-child {
      margin: inherit;
      border-bottom: #fff solid 1px;
 }
-.logo1{
-     width: 250px;
 
+.redes{
+     margin-top: 30px;
+     color: #24DA4B;
 }
 
 ul.social_icon {
-     padding-top: 37px;
      width: 100%;
      float: left;
      text-align: left;
 }
 
 ul.social_icon li {
+     margin-top: 20px;
      display: inline-block;
 }
 
@@ -679,16 +630,29 @@ ul.social_icon li a {
      margin: 0 3px;
 }
 
+
 ul.social_icon li a:hover {
-     background-color: #1400c4;
+     background-color: #0A66C2;
      color: #fff;
 }
+
+ul.social_icon li a.facebook:hover {
+     background-color: #0D88F0;
+     color: #fff;
+}
+
 ul.social_icon li a.instagram:hover {
      background-color: #fd1650;
      color: #fff;
 }
+
 ul.social_icon li a.github:hover {
      background-color: #000000;
+     color: #fff;
+}
+
+ul.social_icon li a.whatsapp:hover {
+     background-color: #58e92c;
      color: #fff;
 }
 
@@ -714,7 +678,6 @@ ul.social_icon li a.github:hover {
 }
 
 
-
 .sub_btn:hover {
      background-color: #000;
      transition: ease-in all 0.5s;
@@ -722,7 +685,7 @@ ul.social_icon li a.github:hover {
 }
 
 .copyright {
-     margin-top: 80px;
+     margin-top: 20px;
      padding-bottom: 20px;
 }
 
@@ -732,7 +695,7 @@ ul.social_icon li a.github:hover {
      line-height: 22px;
      text-align: center;
      border-top: #ddd solid 1px;
-     padding-top: 25px;
+     padding-top: 9px;
      font-weight: normal;
 }
 
@@ -740,11 +703,12 @@ ul.social_icon li a.github:hover {
      color: #ddd;
 }
 
-.copyright a:hover {
-     color: #48ca95;
+.contactame {
+     margin-top: 30px;
 }
-
-
+.contactame .conta a{
+     margin-left: 20px;
+}
 /** end footer **/
 
 
@@ -752,7 +716,6 @@ ul.social_icon li a.github:hover {
 
 .inner_posituong .header {
      position: inherit;
-     background: #4843a3;
 }
 
 .computer_page .laptop {
@@ -764,24 +727,60 @@ ul.social_icon li a.github:hover {
 }
 
 
-/** about **/
+/* about */
 
-.about {
-     background-color: #fff;
-     padding: 90px 0;
+
+.about_main {
+     font-family: 'Dosis', sans-serif;
+     padding: 50px 0;
+     background-color: #8B008B;
 }
 
-.about .titlepage {
+.about_main .titlepage {
      text-align: left;
+     padding-bottom: 0;
 }
 
-.about .titlepage h2 {
+.about_main .titlepage p {
+     color: #fff;
+     font-size: 30px;
+     font-weight: normal;
+     line-height: 30px;
+}
+.about_main .titlepage ul {
+     color: #fff;
+     font-size: 30px;
+     font-weight: normal;
+     line-height: 30px;
+}
+.about_main .titlepage h2 {
+     text-transform: none;
+     font-size: 80px;
+     color: #fff;
      max-width: inherit;
      border: inherit;
+     font-weight: 500;
+     line-height: 80px;
 }
 
-.about .titlepage p {
-     padding: 30px 0;
+.about_box figure {
+     margin: 0;
+}
+
+.margin_bottom {
+     margin-bottom: 30px;
+}
+
+.about_main h2.tecnologias {
+     margin-top: 90px;
+     font-size: 50px;
+     color: orange;
+}
+
+.about_main h2.about {
+     margin-top: 50px;
+     font-size: 70px;
+     margin-bottom: 60px;
 }
 
 .about_img figure {
@@ -791,90 +790,75 @@ ul.social_icon li a.github:hover {
 .about_img figure img {
      width: 100%;
 }
-
-
+/** trabajos **/
+.about_main h2.trabajos {
+     margin-top: 90px;
+     font-size: 50px;
+     color: rgb(9, 255, 0);
+}
+.about_main h1.labores {
+     margin-top: 20px;
+     font-size: 30px;
+     color: rgb(0, 255, 136);
+}
+/** end trabajos **/
 /** end about **/
 
-
-/** laptop **/
-
-.laptop1 {
-     background-color: #f6f6f6;
-     padding: 90px 0;
+.products {
+     padding: 120px 0;
 }
 
-.laptop1 .titlepage {
-     text-align: right;
-}
-
-.laptop1 .titlepage h2 {
-     max-width: inherit;
-     border: inherit;
-     color: #000;
-}
-
-.laptop1 .titlepage p {
-     padding: 30px 0;
-     color: #000;
-}
-
-.laptop1_img figure {
-     margin: 0;
-}
-
-.laptop1_img figure img {
-     width: 100%;
-}
-
-.products div.product_box{
+.products div.product_box {
      text-align: center;
      margin-bottom: 50px;
 }
-.products div.product_box a{
+
+.products div.product_box a {
      margin-top: 10px;
      margin-bottom: 10px;
 }
 
-.conta img{
+.conta img {
      width: 25px;
      height: 25px;
 }
-.conta{
+
+.conta {
      width: 350px;
      speak-as: 10px;
      margin-top: 10px;
 }
-.col-xl-3{
-     margin-top: 20px;
-}
+
 
 .about_img {
-     display: inline-block;
      position: relative;
-     width: 400px;
-     height: 400px;
+     width: 300px;
+     height: 300px;
      overflow: hidden;
      border-radius: 50%;
-   }
-   
-   .about_img img {
+}
+
+.about_img img {
      width: auto;
      height: 100%;
-     margin-left: -50px;
-   }
-   
-   .ir-arriba{
-     display:none;
-     background-repeat:no-repeat;
-     font-size:20px;
-     color:rgb(182, 69, 226);
-     cursor:pointer;
-     position:fixed;
-     bottom:10px;
-     right:10px;
-     z-index:2;
-   }
-   .about_us{
-     font-style: bold;
-     color:white;
+}
+
+.ir-arriba {
+     display: none;
+     background-repeat: no-repeat;
+     font-size: 20px;
+     color: rgb(182, 69, 226);
+     cursor: pointer;
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     z-index: 2;
+}
+
+.about{
+     height: 100px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     color: #fd1650;
    }
