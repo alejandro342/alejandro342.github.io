@@ -733,7 +733,7 @@ ul.social_icon li a.whatsapp:hover {
 .about_main {
      font-family: 'Dosis', sans-serif;
      padding: 50px 0;
-     background-color: #003861;
+     background-color: #8B008B;
 }
 
 .about_main .titlepage {
@@ -743,12 +743,16 @@ ul.social_icon li a.whatsapp:hover {
 
 .about_main .titlepage p {
      color: #fff;
-     font-size: 40px;
+     font-size: 30px;
      font-weight: normal;
-     padding-bottom: 24px;
-     line-height: 40px;
+     line-height: 30px;
 }
-
+.about_main .titlepage ul {
+     color: #fff;
+     font-size: 30px;
+     font-weight: normal;
+     line-height: 30px;
+}
 .about_main .titlepage h2 {
      text-transform: none;
      font-size: 80px;
@@ -774,7 +778,7 @@ ul.social_icon li a.whatsapp:hover {
 }
 
 .about_main h2.about {
-     margin-top: 60px;
+     margin-top: 50px;
      font-size: 70px;
      margin-bottom: 60px;
 }
@@ -786,8 +790,18 @@ ul.social_icon li a.whatsapp:hover {
 .about_img figure img {
      width: 100%;
 }
-
-
+/** trabajos **/
+.about_main h2.trabajos {
+     margin-top: 90px;
+     font-size: 50px;
+     color: rgb(9, 255, 0);
+}
+.about_main h1.labores {
+     margin-top: 20px;
+     font-size: 30px;
+     color: rgb(0, 255, 136);
+}
+/** end trabajos **/
 /** end about **/
 
 .products {
@@ -840,3 +854,11 @@ ul.social_icon li a.whatsapp:hover {
      right: 10px;
      z-index: 2;
 }
+
+.about{
+     height: 100px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     color: #fd1650;
+   }
